@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+
+@theme {
+  --font-display: "Public Sans", sans-serif;
+
+  --color-primary: #0f47f0;
+  --color-background-dark: #101422;
+  --color-card-bg: #192034;
+  --color-input-bg: #111522;
+  --color-border-color: #323f67;
+  --color-border-light: #232c48;
+  --color-text-secondary: #919fca;
+  --color-text-muted: #6371a3;
+  --color-text-dim: #556088;
+}
+
+
+@layer base {
+  body {
+    @apply bg-background-dark text-white font-display;
+  }
+}
+
+.grid-pattern {
+  background-image: radial-gradient(circle, #232c48 1px, transparent 1px);
+  background-size: 30px 30px;
+}
